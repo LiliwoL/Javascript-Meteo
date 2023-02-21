@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meteo</title>
+
+        <meta charset="UTF-8" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container forget-password">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+
+                            <div class="text-center">
+                                <img src="meteo.png" alt="car-key" border="0">
+                                <h2 class="text-center">Quel temps fait il?</h2>
+                                <p>Saisir ici le nom d'une ville</p>
+
+                                <form id="meteo-form" name="meteo-form" role="form" autocomplete="off" class="form" method="post">
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                                            <input id="cityName" name="cityName" placeholder="La Rochelle, Ngaoundere" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="btnForget" class="btn btn-lg btn-primary btn-block btnForget" value="Valider" type="submit">
+                                    </div>
+
+                                </form>
+
+                                <main id="main"></main>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Il est important de placer les scripts à la fin pour s'assurer que le DOm est bien totalement chargé -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!-- Import de la variable d'environnement -->
+        <script type="text/javascript" src="env.js"></script>
+
+        <!-- Script principal -->
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
